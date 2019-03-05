@@ -40,3 +40,9 @@ print(
     'Total Months: {}\nTotal Profit/Loss: ${}\nAverage Change: ${}\nGreatest Increase in Profits: {} (${})\nGreatest Decrease in Profits {} (${})'.format(
         total_months, total_pnl, average_change, month_greatest_increase, greatest_increase_profits,
         month_greatest_decrease, greatest_decrease_profits))
+
+with open('Result.txt', 'w') as WriteFile:
+    WriteFile.write(
+        'Financial Analysis\n------------------\n' + 'Total Months: {}\nTotal Profit/Loss: ${}\nAverage Change: ${}\nGreatest Increase in Profits: {} (${})\nGreatest Decrease in Profits {} (${})'.format(
+            total_months, total_pnl, average_change, month_greatest_increase, greatest_increase_profits,
+            month_greatest_decrease, greatest_decrease_profits))
